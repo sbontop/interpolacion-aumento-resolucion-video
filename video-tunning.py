@@ -40,7 +40,7 @@ def bajar_resolucion(video_name):
 
 def interpolar_video(video_name, interpolation_name, interpolation_method):
     cap = cv2.VideoCapture(video_name)
-    nuevas_dimensiones = (4096, 2160)
+    nuevas_dimensiones = (int(cap.get(3) * 2), int(cap.get(4) * 2))
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
     out = cv2.VideoWriter(interpolation_name+'.avi', fourcc, 30, nuevas_dimensiones)
     while True:
