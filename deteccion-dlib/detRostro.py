@@ -3,7 +3,7 @@ import dlib
 import cv2
  
 # vamos a inicializar y codificar un detector de caras (HOG) 
-#y después de detectar los puntos de referencia en esta cara detectada
+#y después a detectar los puntos de referencia en esta cara detectada
 
 # p = nuestro directorio modelo pre-entrenado, está en el mismo directorio del script.
 p = "shape_predictor_68_face_landmarks.dat"
